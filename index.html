@@ -1,0 +1,278 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MyDex | From Signal to Execution</title>
+    <meta
+      name="description"
+      content="MyDex turns market signals into executable trading workflows."
+    />
+    <link rel="preconnect" href="https://www.mydex.io" />
+    <link rel="preconnect" href="https://api.mydex.io" />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <canvas id="signal-canvas" aria-hidden="true"></canvas>
+
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="MyDex home">
+        <img src="https://www.mydex.io/assets/svg/logo-4alzpuGZ.svg" alt="MyDex" />
+        <span>MyDex</span>
+      </a>
+      <nav class="nav-links" aria-label="Primary navigation">
+        <a href="#ai-discover">AI Discover</a>
+        <a href="https://mydex.zendesk.com/hc/zh-cn" target="_blank" rel="noreferrer">MyDex帮助中心</a>
+        <a href="#workflow">How it works</a>
+        <a href="#security">Security</a>
+      </nav>
+      <a class="nav-cta" href="https://www.mydex.io/" target="_blank" rel="noreferrer">Launch App</a>
+    </header>
+
+    <main id="top">
+      <section class="hero section-shell">
+        <div class="hero-side-label hero-side-label-left">SIGNAL</div>
+        <div class="hero-side-label hero-side-label-right">EXECUTION</div>
+
+        <div class="hero-core" aria-hidden="true">
+          <div class="execution-ring">
+            <div class="ring-line ring-line-a"></div>
+            <div class="ring-line ring-line-b"></div>
+            <div class="ring-pulse"></div>
+            <div class="ring-center">
+              <span>AI</span>
+            </div>
+          </div>
+          <div class="signal-chip chip-one">
+            <span>BTC</span>
+            <strong>+3.42%</strong>
+          </div>
+          <div class="signal-chip chip-two">
+            <span>Funding</span>
+            <strong>-0.018%</strong>
+          </div>
+          <div class="signal-chip chip-three">
+            <span>Whale Flow</span>
+            <strong>$8.7M</strong>
+          </div>
+        </div>
+
+        <div class="hero-copy">
+          <p class="eyebrow">FROM SIGNAL TO EXECUTION</p>
+          <h1>MyDex</h1>
+          <div class="thin-rule"></div>
+          <p class="hero-kicker">AI-NATIVE TRADING TERMINAL</p>
+          <p class="hero-body">
+            Turn market noise into conviction, and conviction into action.
+          </p>
+          <div class="hero-actions">
+            <a class="primary-button" href="https://www.mydex.io/" target="_blank" rel="noreferrer">
+              Launch MyDex
+            </a>
+            <a class="secondary-button" href="#workflow">See Workflow</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="product-stage" id="ai-discover" aria-label="MyDex product preview">
+        <div class="stage-grid">
+          <aside class="terminal-nav" aria-label="Product navigation preview">
+            <div class="terminal-brand">
+              <img src="https://www.mydex.io/assets/svg/logo-4alzpuGZ.svg" alt="" />
+              <strong>MyDex</strong>
+            </div>
+            <div class="terminal-link active">
+              <span class="icon-dot compass"></span>
+              Discover
+            </div>
+            <div class="terminal-link">
+              <span class="icon-dot wallet"></span>
+              Assets
+            </div>
+            <div class="terminal-link">
+              <span class="icon-dot cat"></span>
+              Cat Home
+            </div>
+            <div class="terminal-link">
+              <span class="icon-dot gear"></span>
+              Preferences
+            </div>
+          </aside>
+
+          <div class="market-feed" aria-label="Signal discovery preview">
+            <div class="panel-header">
+              <span>Discover</span>
+              <small>LIVE SIGNALS</small>
+            </div>
+            <article class="feed-row hot">
+              <div class="feed-meta">
+                <span>DeFi</span>
+                <time>2 min ago</time>
+              </div>
+              <h2>ETH liquidity rotation detected.</h2>
+              <p>Rising volume. Tighter spreads. Whale flow confirmed.</p>
+              <div class="row-actions">
+                <button type="button">Ask AI</button>
+                <button type="button">Trade ETH</button>
+              </div>
+            </article>
+            <article class="feed-row">
+              <div class="feed-meta">
+                <span>Macro</span>
+                <time>8 min ago</time>
+              </div>
+              <h2>BTC funding reset.</h2>
+              <p>Spot demand holds. Volatility stabilizes.</p>
+              <div class="row-actions">
+                <button type="button">Explain</button>
+                <button type="button">Trade BTC</button>
+              </div>
+            </article>
+          </div>
+
+          <aside class="ai-panel" id="ai" aria-label="AI trading assistant preview">
+            <div class="ai-avatar">
+              <img src="https://www.mydex.io/assets/png/ai-BIBDPLYS.png" alt="AI Cat" />
+              <div>
+                <span>AI Cat</span>
+                <small>Online</small>
+              </div>
+            </div>
+            <div class="ai-message">
+              Strong signal cluster found. Thesis, risk, and execution are ready to review.
+            </div>
+            <div class="intent-stack">
+              <div>
+                <span>Signal</span>
+                <strong>Liquidity reset</strong>
+              </div>
+              <div>
+                <span>Conviction</span>
+                <strong>72% confidence</strong>
+              </div>
+              <div>
+                <span>Execution</span>
+                <strong>Review ready</strong>
+              </div>
+            </div>
+            <button class="commit-button" type="button">Review Execution</button>
+          </aside>
+        </div>
+      </section>
+
+      <section class="section-shell workflow" id="workflow">
+        <p class="eyebrow">HOW IT WORKS</p>
+        <h2>Signal. Conviction. Execution.</h2>
+        <div class="thin-rule"></div>
+        <div class="workflow-track" aria-label="MyDex workflow steps">
+          <div class="workflow-step">
+            <span>01</span>
+            <h3>Discover</h3>
+            <p>AI filters the market into relevant opportunities.</p>
+          </div>
+          <div class="workflow-step">
+            <span>02</span>
+            <h3>Understand</h3>
+            <p>Each signal comes with thesis, catalyst, and risk.</p>
+          </div>
+          <div class="workflow-step">
+            <span>03</span>
+            <h3>Build</h3>
+            <p>Conviction becomes a clear trading workflow.</p>
+          </div>
+          <div class="workflow-step">
+            <span>04</span>
+            <h3>Execute</h3>
+            <p>Approve the final action before capital moves.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="capabilities" id="execution">
+        <div class="section-heading">
+          <p class="eyebrow">EXECUTION LAYER</p>
+          <h2>AI finds the edge. MyDex makes it tradable.</h2>
+          <p>One flow for discovery, context, and execution.</p>
+        </div>
+        <div class="capability-grid">
+          <article class="capability-card market-card">
+            <div class="card-topline">SIGNAL INTELLIGENCE</div>
+            <h3>Live market discovery</h3>
+            <p>Ranked opportunities from market, on-chain, and social signals.</p>
+          </article>
+          <article class="capability-card conviction-card">
+            <div class="card-topline">AI REASONING</div>
+            <h3>Explainable conviction</h3>
+            <p>Know why it matters before you act.</p>
+          </article>
+          <article class="capability-card asset-card">
+            <div class="card-topline">PORTFOLIO CONTEXT</div>
+            <h3>Asset-aware decisions</h3>
+            <p>Ideas shaped by exposure and intent.</p>
+          </article>
+          <article class="capability-card execution-card">
+            <div class="card-topline">TRADE WORKFLOW</div>
+            <h3>Action-ready execution</h3>
+            <p>From insight to confirmation-ready trades.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="metrics section-shell" aria-label="Platform coverage metrics">
+        <p class="eyebrow">MYDEX STACK</p>
+        <h2>One terminal. Full path.</h2>
+        <div class="metric-row">
+          <div>
+            <strong>24/7</strong>
+            <span>Signal monitoring</span>
+          </div>
+          <div>
+            <strong>AI</strong>
+            <span>Market explanation</span>
+          </div>
+          <div>
+            <strong>1</strong>
+            <span>Execution flow</span>
+          </div>
+          <div>
+            <strong>∞</strong>
+            <span>Opportunity space</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="security" id="security">
+        <div class="section-heading">
+          <p class="eyebrow">SECURITY</p>
+          <h2>Control stays with the trader.</h2>
+          <p>AI supports decisions. You approve execution.</p>
+        </div>
+        <div class="security-grid">
+          <article>
+            <span>01</span>
+            <h3>Explicit confirmation</h3>
+            <p>Review every action before committing.</p>
+          </article>
+          <article>
+            <span>02</span>
+            <h3>Contextual risk checks</h3>
+            <p>See catalyst, liquidity, and invalidation points.</p>
+          </article>
+          <article>
+            <span>03</span>
+            <h3>Permission-aware workflows</h3>
+            <p>Discovery and execution stay clearly separated.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="final-cta section-shell">
+        <p class="eyebrow">FROM SIGNAL TO EXECUTION</p>
+        <h2>Trade the signal.</h2>
+        <a class="primary-button" href="https://www.mydex.io/" target="_blank" rel="noreferrer">Launch MyDex</a>
+      </section>
+    </main>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
