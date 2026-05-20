@@ -1,0 +1,242 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MeowDex Product Redesign</title>
+    <meta
+      name="description"
+      content="A standalone web redesign based on the MyDex product logic with the MeowDex dark fintech visual system."
+    />
+    <link rel="preconnect" href="https://www.mydex.io" />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body class="redesign-body web-product-body">
+    <canvas id="signal-canvas" aria-hidden="true"></canvas>
+
+    <div class="redesign-shell web-product-shell">
+      <aside class="redesign-sidebar web-product-sidebar" aria-label="Product navigation">
+        <a class="redesign-brand" href="./index.html" aria-label="Back to MeowDex landing">
+          <img src="https://www.mydex.io/assets/svg/logo-4alzpuGZ.svg" alt="MeowDex" />
+          <span>MeowDex</span>
+        </a>
+
+        <nav class="redesign-nav" aria-label="Main navigation">
+          <a class="active" href="#discover"><span class="icon-dot compass"></span>发现</a>
+          <a href="#assets"><span class="icon-dot wallet"></span>资产</a>
+          <a href="#cat"><span class="icon-dot cat"></span>猫窝</a>
+          <a href="#preferences"><span class="icon-dot gear"></span>偏好设置</a>
+        </nav>
+
+        <div class="redesign-download">
+          <div class="phone-glyph" aria-hidden="true"></div>
+          <div>
+            <span>下载移动 APP</span>
+            <strong>同步观察列表、提醒和 AI 笔记。</strong>
+          </div>
+        </div>
+
+        <button class="redesign-login" type="button">立即登录</button>
+
+        <div class="side-social" aria-label="Social links">
+          <span>X</span>
+          <span>Discord</span>
+          <span>Telegram</span>
+        </div>
+      </aside>
+
+      <main class="redesign-main web-product-main" id="discover">
+        <header class="redesign-topbar web-product-topbar">
+          <div>
+            <p class="eyebrow">DISCOVER</p>
+            <h1>发现</h1>
+          </div>
+          <div class="redesign-filter" aria-label="Market filters">
+            <button class="active" type="button" data-filter="全部">全部</button>
+            <button type="button" data-filter="科技">科技</button>
+            <button type="button" data-filter="股票市场">股票市场</button>
+            <button type="button" data-filter="Crypto">Crypto</button>
+            <button type="button" data-filter="监管">监管</button>
+            <button type="button" data-filter="宏观">宏观</button>
+          </div>
+        </header>
+
+        <section class="web-feed" id="assets" aria-label="Discovery feed">
+          <div class="news-source-links" aria-label="News source links">
+            <span>新闻源</span>
+            <a href="https://github.com/6551Team/opennews-mcp" target="_blank" rel="noreferrer">
+              6551 OpenNews
+            </a>
+            <a href="https://github.com/6551Team/opentwitter-mcp" target="_blank" rel="noreferrer">
+              6551 OpenTwitter
+            </a>
+          </div>
+
+          <article class="web-news-card featured" data-category="科技">
+            <div class="news-card-top">
+              <span>科技</span>
+              <time>9 分钟前</time>
+            </div>
+            <div class="news-body">
+              <h2>NVIDIA 财报前，AI 基建交易重新升温。</h2>
+              <p>
+                市场关注点正在从单一芯片扩散到数据中心、电力、散热和高压供电链条。AI 军备竞赛的下一层叙事，可能正在从算力转向功率。
+              </p>
+              <div class="news-meta-row">
+                <a href="https://github.com/6551Team/opennews-mcp" target="_blank" rel="noreferrer">OpenNews</a>
+                <a href="https://github.com/6551Team/opentwitter-mcp" target="_blank" rel="noreferrer">OpenTwitter</a>
+                <span>Social momentum rising</span>
+              </div>
+            </div>
+            <div class="news-tools">
+              <button type="button">X</button>
+              <button type="button">AI 喵解读</button>
+            </div>
+          </article>
+
+          <article class="web-news-card stock-card" data-category="股票市场">
+            <div class="news-card-top">
+              <span>股票市场</span>
+              <time>12 分钟前</time>
+            </div>
+            <div class="news-body">
+              <h2>全球股票市场热点集中在 AI 基建、能源效率和半导体链条。</h2>
+              <p>
+                6551 OpenNews 捕捉宏观与企业新闻，6551 OpenTwitter 追踪市场讨论热度。当前股票市场的核心线索不是单一美股，而是 AI capex 外溢到电力、散热、设备和数据中心运营商。
+              </p>
+              <div class="news-meta-row">
+                <a href="https://github.com/6551Team/opennews-mcp" target="_blank" rel="noreferrer">OpenNews</a>
+                <a href="https://github.com/6551Team/opentwitter-mcp" target="_blank" rel="noreferrer">OpenTwitter</a>
+                <span>Stocks: Global market heat</span>
+                <span>Opportunity: AI infra basket</span>
+              </div>
+            </div>
+            <div class="news-tools">
+              <button type="button">X</button>
+              <button type="button">AI 喵解读</button>
+            </div>
+          </article>
+
+          <article class="web-news-card" data-category="Crypto">
+            <div class="news-card-top">
+              <span>Crypto</span>
+              <time>18 分钟前</time>
+            </div>
+            <div class="news-body">
+              <h2>BTC 杠杆降温，现货需求仍在观察区间。</h2>
+              <p>
+                Funding reset 不是方向信号，但它会影响下一次突破的风险收益。真正值得跟踪的是 ETF 净流、交易所余额和放量确认。
+              </p>
+              <div class="news-meta-row">
+                <a href="https://github.com/6551Team/opennews-mcp" target="_blank" rel="noreferrer">OpenNews</a>
+                <a href="https://github.com/6551Team/opentwitter-mcp" target="_blank" rel="noreferrer">OpenTwitter</a>
+                <span>Signal: Liquidity reset</span>
+                <span>Execution: Wait for confirmation</span>
+              </div>
+            </div>
+            <div class="news-tools">
+              <button type="button">X</button>
+              <button type="button">AI 喵解读</button>
+            </div>
+          </article>
+
+          <article class="web-news-card" data-category="监管">
+            <div class="news-card-top">
+              <span>监管</span>
+              <time>26 分钟前</time>
+            </div>
+            <div class="news-body">
+              <h2>加密合规新闻升温，隐私与风控叙事重新活跃。</h2>
+              <p>
+                监管事件通常不直接决定价格，但会改变交易场所、稳定币和链上风控基础设施的市场预期。
+              </p>
+              <div class="news-meta-row">
+                <a href="https://github.com/6551Team/opennews-mcp" target="_blank" rel="noreferrer">OpenNews</a>
+                <span>Risk: Venue pressure</span>
+                <span>Watch: Stablecoin flows</span>
+              </div>
+            </div>
+            <div class="news-tools">
+              <button type="button">X</button>
+              <button type="button">AI 喵解读</button>
+            </div>
+          </article>
+
+          <article class="web-news-card" data-category="宏观">
+            <div class="news-card-top">
+              <span>宏观</span>
+              <time>34 分钟前</time>
+            </div>
+            <div class="news-body">
+              <h2>美元流动性预期变化，风险资产进入等待窗口。</h2>
+              <p>
+                短线市场可能继续围绕利率、美元和科技股财报定价。交易上更适合等待确认，而不是追逐单条 headline。
+              </p>
+              <div class="news-meta-row">
+                <a href="https://github.com/6551Team/opennews-mcp" target="_blank" rel="noreferrer">OpenNews</a>
+                <a href="https://github.com/6551Team/opentwitter-mcp" target="_blank" rel="noreferrer">OpenTwitter</a>
+                <span>Macro: Dollar liquidity</span>
+                <span>Bias: Neutral until breakout</span>
+              </div>
+            </div>
+            <div class="news-tools">
+              <button type="button">X</button>
+              <button type="button">AI 喵解读</button>
+            </div>
+          </article>
+        </section>
+      </main>
+
+      <aside class="redesign-agent web-product-agent" id="cat" aria-label="AI Cat assistant">
+        <div class="agent-hero web-cat-hero">
+          <img src="https://www.mydex.io/assets/png/ai-BIBDPLYS.png" alt="AI Cat" />
+          <div>
+            <span>AI 喵</span>
+            <small>在线分析市场</small>
+          </div>
+        </div>
+
+        <div class="cat-message">
+          喵，我已经把今天的热点整理好了。当前最值得深入的是 AI 基建的二阶机会，以及 BTC 流动性重置后的确认信号。
+        </div>
+
+        <div class="hot-questions">
+          <button type="button">
+            <span>最热问题</span>
+            今天市场发生了什么？
+          </button>
+          <button type="button">
+            <span>交易机会</span>
+            哪些叙事正在加速？
+          </button>
+          <button type="button">
+            <span>风险检查</span>
+            这个信号有什么无效点？
+          </button>
+        </div>
+
+        <label class="chat-box" for="cat-input">
+          <input id="cat-input" type="text" placeholder="您可以问我任何加密交易问题" />
+          <button type="button">Ask</button>
+        </label>
+
+        <div class="agent-context">
+          <div>
+            <span>Signal</span>
+            <strong>AI infra rotation</strong>
+          </div>
+          <div>
+            <span>Conviction</span>
+            <strong>Needs volume confirmation</strong>
+          </div>
+          <div>
+            <span>Execution</span>
+            <strong>Build watchlist first</strong>
+          </div>
+        </div>
+      </aside>
+    </div>
+
+    <script src="./script.js?v=stock-market-tab"></script>
+  </body>
+</html>

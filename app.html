@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MeowDex App | Market Intelligence</title>
+    <meta
+      name="description"
+      content="A dark AI-native trading terminal for market news, signal discovery, and execution workflows."
+    />
+    <link rel="preconnect" href="https://www.mydex.io" />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body class="app-body">
+    <canvas id="signal-canvas" aria-hidden="true"></canvas>
+
+    <div class="app-shell">
+      <aside class="app-sidebar" aria-label="MeowDex app navigation">
+        <a class="app-brand" href="./index.html" aria-label="MeowDex home">
+          <img src="https://www.mydex.io/assets/svg/logo-4alzpuGZ.svg" alt="MeowDex" />
+          <span>MeowDex</span>
+        </a>
+
+        <nav class="app-menu" aria-label="Product navigation">
+          <a class="active" href="#discover"><span class="icon-dot compass"></span>Discover</a>
+          <a href="#opportunities"><span class="icon-dot wallet"></span>Opportunities</a>
+          <a href="#agent"><span class="icon-dot cat"></span>AI Cat</a>
+          <a href="#sources"><span class="icon-dot gear"></span>Sources</a>
+        </nav>
+
+        <div class="source-stack" id="sources" aria-label="Connected news sources">
+          <p class="mini-label">DATA SOURCES</p>
+          <div class="source-card live">
+            <span>News Feed</span>
+            <strong>Macro + crypto news</strong>
+          </div>
+          <div class="source-card live">
+            <span>Social Feed</span>
+            <strong>KOL + social momentum</strong>
+          </div>
+        </div>
+
+        <a class="sidebar-cta" href="https://www.mydex.io/" target="_blank" rel="noreferrer">
+          Open original
+        </a>
+      </aside>
+
+      <main class="app-main" id="discover">
+        <header class="app-topbar">
+          <div>
+            <p class="eyebrow">AI DISCOVER</p>
+            <h1>Market Intelligence</h1>
+          </div>
+          <div class="topbar-actions" aria-label="Market controls">
+            <button type="button">24H</button>
+            <button type="button">Crypto</button>
+            <button type="button">US Stocks</button>
+          </div>
+        </header>
+
+        <section class="intelligence-hero" aria-label="Market intelligence summary">
+          <div class="pulse-orbit" aria-hidden="true">
+            <div class="pulse-ring pulse-a"></div>
+            <div class="pulse-ring pulse-b"></div>
+            <img src="./assets/meowdex-orbit-cat.svg" alt="" />
+          </div>
+          <div class="hero-signal-copy">
+            <p class="eyebrow">FROM NEWS TO TRADE SETUP</p>
+            <h2>Find the story before it becomes the chart.</h2>
+            <p>
+              Market news watches the headlines. Social signals watch the crowd. MeowDex turns both into context-rich trading workflows.
+            </p>
+          </div>
+          <div class="signal-score">
+            <span>Signal heat</span>
+            <strong>87</strong>
+            <small>High narrative velocity</small>
+          </div>
+        </section>
+
+        <section class="news-layout" id="opportunities">
+          <div class="news-feed" aria-label="Hot market news">
+            <div class="panel-header">
+              <span>Hot Market News</span>
+              <small>NEWS + SOCIAL SIGNALS</small>
+            </div>
+
+            <article class="intel-card priority">
+              <div class="intel-meta">
+                <span>AI INFRA</span>
+                <time>LIVE</time>
+              </div>
+              <h2>NVIDIA earnings narrative pulls capital back into AI infrastructure.</h2>
+              <p>
+                Data-center demand, power distribution, and cooling constraints are becoming the market's next AI trade.
+              </p>
+              <div class="opportunity-strip">
+                <span>Hidden setup</span>
+                <strong>Watch AI power, data-center, and semiconductor supply-chain leaders for rotation.</strong>
+              </div>
+              <div class="source-row">
+                <span>News</span>
+                <span>Social</span>
+                <span>Tech + Equities</span>
+              </div>
+            </article>
+
+            <article class="intel-card">
+              <div class="intel-meta">
+                <span>BTC LIQUIDITY</span>
+                <time>24H</time>
+              </div>
+              <h2>BTC funding reset lowers leverage pressure while spot demand holds.</h2>
+              <p>
+                The cleaner setup is not direction by itself. It is context for waiting on confirmation and liquidity expansion.
+              </p>
+              <div class="opportunity-strip">
+                <span>Hidden setup</span>
+                <strong>Track ETF flow, exchange reserves, and perp funding before chasing momentum.</strong>
+              </div>
+              <div class="source-row">
+                <span>News</span>
+                <span>Social</span>
+                <span>Crypto</span>
+              </div>
+            </article>
+
+            <article class="intel-card">
+              <div class="intel-meta">
+                <span>REGULATION</span>
+                <time>LIVE</time>
+              </div>
+              <h2>Crypto enforcement headlines keep compliance tokens and privacy narratives active.</h2>
+              <p>
+                Sanctions and illicit-flow stories often move the market indirectly through venue risk, stablecoins, and compliance infrastructure.
+              </p>
+              <div class="opportunity-strip">
+                <span>Hidden setup</span>
+                <strong>Separate regulatory fear from real liquidity impact before positioning.</strong>
+              </div>
+              <div class="source-row">
+                <span>News</span>
+                <span>Policy</span>
+                <span>On-chain risk</span>
+              </div>
+            </article>
+          </div>
+
+          <aside class="agent-panel" id="agent" aria-label="AI trading analysis">
+            <div class="agent-header">
+              <img src="./assets/meowdex-orbit-cat.svg" alt="AI Cat" />
+              <div>
+                <span>AI Cat</span>
+                <small>Signal analyst online</small>
+              </div>
+            </div>
+
+            <div class="agent-message">
+              Today's strongest narrative is AI infrastructure. The trade is not only NVDA. The second-order opportunity is power, cooling, and data-center capacity.
+            </div>
+
+            <div class="thesis-stack">
+              <div>
+                <span>Catalyst</span>
+                <strong>AI capex acceleration</strong>
+              </div>
+              <div>
+                <span>Risk</span>
+                <strong>Crowded positioning</strong>
+              </div>
+              <div>
+                <span>Execution</span>
+                <strong>Wait for volume confirmation</strong>
+              </div>
+            </div>
+
+            <button class="commit-button" type="button">Build Trade Workflow</button>
+          </aside>
+        </section>
+      </main>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>

@@ -151,3 +151,23 @@ window.addEventListener("pointerleave", () => {
 
 resizeCanvas();
 requestAnimationFrame(draw);
+
+const redesignFilters = document.querySelectorAll(".redesign-filter button[data-filter]");
+const redesignCards = document.querySelectorAll(".web-news-card[data-category]");
+
+if (redesignFilters.length && redesignCards.length) {
+  redesignFilters.forEach((button) => {
+    button.addEventListener("click", () => {
+      const filter = button.dataset.filter;
+
+      redesignFilters.forEach((item) => {
+        item.classList.toggle("active", item === button);
+      });
+
+      redesignCards.forEach((card) => {
+        const shouldShow = filter === "全部" || card.dataset.category === filter;
+        card.classList.toggle("is-hidden", !shouldShow);
+      });
+    });
+  });
+}
