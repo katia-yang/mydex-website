@@ -1,0 +1,26 @@
+<svg width="128" height="128" viewBox="0 0 128 128" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <filter id="softGlow" x="-45%" y="-45%" width="190%" height="190%" color-interpolation-filters="sRGB">
+      <feGaussianBlur stdDeviation="4.5" result="blur"/>
+      <feColorMatrix in="blur" type="matrix" values="1 0 0 0 1 0 0 0 0 .46 0 0 0 0 .08 0 0 0 .82 0"/>
+      <feBlend in="SourceGraphic" mode="screen"/>
+    </filter>
+    <linearGradient id="catStroke" x1="20" y1="24" x2="106" y2="104" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFD18A"/>
+      <stop offset=".38" stop-color="#FF9D2D"/>
+      <stop offset="1" stop-color="#FF6A1A"/>
+    </linearGradient>
+    <linearGradient id="cyanEdge" x1="26" y1="100" x2="112" y2="36" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#27E4FF" stop-opacity="0"/>
+      <stop offset=".72" stop-color="#27E4FF" stop-opacity=".55"/>
+      <stop offset="1" stop-color="#27E4FF" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <circle cx="64" cy="68" r="48" fill="#050608" fill-opacity=".72"/>
+  <circle cx="64" cy="68" r="44" stroke="url(#cyanEdge)" stroke-width="1.4"/>
+  <path filter="url(#softGlow)" d="M26 72V42.5C26 39.9 29.1 38.6 30.9 40.5L48.7 59.3C50.7 61.4 53.5 62.6 56.4 62.6H71.7C74.6 62.6 77.4 61.4 79.4 59.3L97.1 40.5C98.9 38.6 102 39.9 102 42.5V72C102 93.5 85.1 108 64 108C42.9 108 26 93.5 26 72Z" stroke="url(#catStroke)" stroke-width="7.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M45.5 80.5C49.2 87.8 56.1 92.2 64 92.2C71.9 92.2 78.8 87.8 82.5 80.5" stroke="#FFB454" stroke-width="4.5" stroke-linecap="round"/>
+  <circle cx="49" cy="73" r="4.4" fill="#FFB454"/>
+  <circle cx="79" cy="73" r="4.4" fill="#FFB454"/>
+  <path d="M61.5 80.2C62.7 81.4 65.3 81.4 66.5 80.2" stroke="#FFD18A" stroke-width="3.2" stroke-linecap="round"/>
+</svg>
